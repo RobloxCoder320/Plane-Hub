@@ -1,30 +1,20 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Library Selection - Plane Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Selection"})
-
-local Tab = Window:MakeTab({
-	Name = "Recommended",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Plane Hub | Library Selection",
+   Icon = 0,
+   LoadingTitle = "Plane Hub | Library Selection",
+   LoadingSubtitle = "By RobloxCoder320",
+   Theme = "Default",
 })
 
-Tab:AddButton({
-	Name = "Plane Hub - Rayfield",
-	Callback = function()
-        loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxCoder320/Plane-Hub/refs/heads/main/Plane%20Hub%20-%20Rayfield")))()
-        OrionLib:Destroy()
-  	end    
-})
+local Rec = Window:CreateTab("Recommended")
+local PC = Window:CreateTab("PC Libraries")
+local Mob = Window:CreateTab("Mobile Libraries")
 
-local Tab = Window:MakeTab({
-	Name = "PC Libraries",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
-
-local Tab = Window:MakeTab({
-	Name = "Mobile Libraries",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Button = Rec:CreateButton({
+   Name = "Plane Hub | Rayfield",
+   Callback = function()
+   loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxCoder320/Plane-Hub/refs/heads/main/Plane%20Hub%20-%20Rayfield")))()
+   Rayfield:Destroy()
+   end,
 })
