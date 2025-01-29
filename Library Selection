@@ -1,7 +1,5 @@
---[Made By RobloxCoder320]--
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Library Selection - Plane Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Selection"})
-local sd = OrionLib:Destroy()
 
 local Tab = Window:MakeTab({
 	Name = "Recommended",
