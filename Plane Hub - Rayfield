@@ -1,0 +1,206 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "GalaxyHub | Universal",
+   Icon = 0,
+   LoadingTitle = "GalaxyHub | Universal",
+   LoadingSubtitle = "By RobloxCoder320",
+   Theme = "Default",
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = true,
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = Universal,
+      FileName = "GalaxyHub Supported Games"
+   },
+
+   Discord = {
+      Enabled = true,
+      Invite = "neh53ukEFg",
+      RememberJoins = true
+   },
+
+   KeySystem = false,
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "Join the Community Server - ",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"Hello"}
+   }
+})
+
+--[Tabs]--
+local Main = Window:CreateTab("Main", "home")
+local Credits = Window:CreateTab("Credits", "copyright")
+local Scripts = Window:CreateTab("Scripts", "code-2")
+local Misc = Window:CreateTab("Misc", "circle-user")
+
+--[Labels]--
+local media = Main:CreateSection("Media")
+
+local Button = Main:CreateButton({
+   Name = "Rayfield Library",
+   Callback = function()
+   setclipboard("https://docs.sirius.menu/rayfield")
+   end,
+})
+
+
+local Button = Main:CreateButton({
+   Name = "My Discord",
+   Callback = function()
+   setclipboard("liamblue2014.")
+   end,
+})
+
+local creds = Credits:CreateSection("Credits")
+
+local Button = Credits:CreateButton({
+   Name = "Lucide Icons Link",
+   Callback = function()
+   setclipboard("https://github.com/latte-soft/lucide-roblox/tree/master/icons/compiled/48px")
+   end,
+})
+
+
+local Button = Credits:CreateButton({
+   Name = "GalaxyHub Discord Server",
+   Callback = function()
+   setclipboard("https://discord.gg/neh53ukEFg")
+   end,
+})
+
+--[Scripts]--
+local admin = Scripts:CreateSection("Admins")
+
+local Button = Scripts:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Nameless Admin",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/refs/heads/main/NA%20-%20Nameless%20Admin'))()
+   end,
+})
+
+local scripts = Scripts:CreateSection("Scripts")
+
+local Button = Scripts:CreateButton({
+   Name = "Project Auto - JailBreak",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7540ba23dbc2a9228591964a91244237.lua"))()()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Jerk Script - R6 NEEDED",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))("Spider Script")
+   end,
+})
+
+local guis = Scripts:CreateSection("GUIS")
+
+local Button = Scripts:CreateButton({
+   Name = "MM2 Gui",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Fisch Gui",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Nivex123456/main/refs/heads/main/Loader.lua"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Arsenal Gui",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/DatMxkey/Nexware/main/loader.lua"))()
+   end,
+})
+
+local chats = Scripts:CreateSection("Chats")
+
+local Button = Scripts:CreateButton({
+   Name = "Chat Bypass",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/refs/heads/main/SYNERGY%20-%20CHAT%20BYPASS"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Fake Chat",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/main/Fake%20Chat"))()
+   end,
+})
+
+local farms = Scripts:CreateSection("Autofarms")
+
+local Button = Scripts:CreateButton({
+   Name = "Build a Boat Autofarm",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Treasure Hunt Autofarm",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Destiny/main/loader.lua",true))()
+   end,
+})
+
+local trolls = Scripts:CreateSection("Trolls")
+
+local Button = Scripts:CreateButton({
+   Name = "Skyhub - FE Trolling Gui",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "FE Bring Player",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/main/FE%20Bring%20Player'))()
+   end,
+})
+
+local misc = Misc:CreateSection("Humanoid")
+
+local Slider = Misc:CreateSlider({
+   Name = "Walkspeed",
+   Range = {16, 250},
+   Increment = 1,
+   Suffix = "Walkspeed",
+   CurrentValue = 16,
+   Flag = "WSpeed",
+   Callback = function(W)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = W
+   end,
+})
+
+local Slider = Misc:CreateSlider({
+   Name = "Jump Power",
+   Range = {50, 500},
+   Increment = 1,
+   Suffix = "Jump Power",
+   CurrentValue = 50,
+   Flag = "JSpeed",
+   Callback = function(S)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = S
+   end,
+})
