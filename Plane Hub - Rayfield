@@ -88,7 +88,7 @@ local Button = Scripts:CreateButton({
 local Button = Scripts:CreateButton({
    Name = "Nameless Admin",
    Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/refs/heads/main/NA%20-%20Nameless%20Admin'))()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/RobloxCoder320/Main-Scripts/refs/heads/main/Nameless%20Admin'))()
    end,
 })
 
@@ -136,7 +136,7 @@ local chats = Scripts:CreateSection("Chats")
 local Button = Scripts:CreateButton({
    Name = "Chat Bypass",
    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/refs/heads/main/SYNERGY%20-%20CHAT%20BYPASS"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxCoder320/Main-Scripts/refs/heads/main/Synergy%20Chat%20Bypass"))()
    end,
 })
 
