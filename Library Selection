@@ -10,7 +10,8 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Plane Hub - Rayfield",
 	Callback = function()
-      		
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/RobloxCoder320/Plane-Hub/refs/heads/main/Plane%20Hub%20-%20Rayfield")))()
+        OrionLib:Destroy()
   	end    
 })
 
