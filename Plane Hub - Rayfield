@@ -1,9 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "GalaxyHub | Universal",
+   Name = "Plane Hub | Rayfield",
    Icon = 0,
-   LoadingTitle = "GalaxyHub | Universal",
+   LoadingTitle = "Plane Hub | Rayfield",
    LoadingSubtitle = "By RobloxCoder320",
    Theme = "Default",
 
@@ -13,7 +13,7 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = Universal,
-      FileName = "GalaxyHub Supported Games"
+      FileName = "Plane Hub Supported Games"
    },
 
    Discord = {
@@ -69,7 +69,7 @@ local Button = Credits:CreateButton({
 
 
 local Button = Credits:CreateButton({
-   Name = "GalaxyHub Discord Server",
+   Name = "Plane Hub Discord Server",
    Callback = function()
    setclipboard("https://discord.gg/neh53ukEFg")
    end,
