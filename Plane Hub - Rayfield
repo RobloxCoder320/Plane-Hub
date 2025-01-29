@@ -143,7 +143,7 @@ local Button = Scripts:CreateButton({
 local Button = Scripts:CreateButton({
    Name = "Fake Chat",
    Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/main/Fake%20Chat"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxCoder320/Main-Scripts/refs/heads/main/Fake%20Chat"))()
    end,
 })
 
@@ -175,7 +175,7 @@ local Button = Scripts:CreateButton({
 local Button = Scripts:CreateButton({
    Name = "FE Bring Player",
    Callback = function()
-      loadstring(game:HttpGet('https://raw.githubusercontent.com/RobloxCoder320/GalaxyHub/main/FE%20Bring%20Player'))()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/RobloxCoder320/Main-Scripts/refs/heads/main/Filtering%20Enabled%20Bring%20Player'))()
    end,
 })
 
